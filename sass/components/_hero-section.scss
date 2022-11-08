@@ -1,0 +1,104 @@
+.hero {
+    margin-right: auto;
+    margin-left: auto;
+    
+    background: var(--secondaly);
+    background-color: #C4C4C4;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+    url(../images/overlay.jpg);
+
+@media screen and (min-width: 480px) {
+    width: 480px;
+    height: 400px;
+
+    padding: 118px 0;
+    }
+    
+@media screen and (min-width: 768px) {
+    width: 768px;
+    height: 400px;
+
+    padding: 118px 0;
+}
+
+@media screen and (min-width: 1200px) {
+    width: 1600px;
+    height: 600px;
+
+    padding: 200px 0;
+}
+}
+
+.hero-title {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    
+    color: var(--white);
+
+@media screen and (min-width: 480px) {
+    width: 360px;
+          
+    font-size: 26px;
+    line-height: 1.61;
+    }
+
+@media screen and (min-width: 768px) {
+    width: 360px;
+
+    font-size: 26px;
+    line-height: 1.61;
+    }
+
+@media screen and (min-width: 1200px) {
+    width: 700px;
+    font-size: 44px;
+    line-height: 1.36;
+    }
+}
+
+.hero-button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    font-family: inherit;
+    letter-spacing: 0.06em;
+
+    border-radius: 4px;
+    border: none;
+    color: var(--white);
+    background-color: var(--accent-color);
+
+    transition: background-color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
+
+@media screen and (min-width: 480px) {
+    padding: 10px 24px;
+    }
+
+@media screen and (min-width: 768px) {
+    padding: 10px 24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 10px 32px;
+    }
+
+&:hover,
+&:focus {
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    }
+}

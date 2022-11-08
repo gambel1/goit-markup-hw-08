@@ -1,0 +1,30 @@
+.address {
+    font-family: 'Roboto';
+    font-style: normal;
+    letter-spacing: 0.03em;
+}
+
+.address__list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.address__text {
+    color: var(--white);
+    line-height: 1.7;
+    text-decoration: none;
+}
+
+.address__link {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.7;
+    text-decoration: none;
+    transition: color 250ms var(--timing-function);
+
+&:hover,
+&:focus {
+    color: var(--accent-color);
+    }
+    display: none;
+}

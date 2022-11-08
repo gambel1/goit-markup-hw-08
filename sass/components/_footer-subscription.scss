@@ -1,0 +1,64 @@
+.footer-subscription {
+    display: none;
+}
+.footer-subscription__text {
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--white);
+}
+
+/* subscription-form */
+.footer-subscription__form {
+    display: flex;
+    margin-top: 20px;
+}
+
+.footer-subscription__form input {
+    display: block;
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding: 15px 0 15px 16px;
+
+    color: var(--white);
+    background-color: var(--secondaly);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    
+&::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+        
+    color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.footer-subscription__button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+    width: 200px;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+    color: var(--white);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+}
+
+.footer-subscription__icon {
+    fill: var(--white);
+}

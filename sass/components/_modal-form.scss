@@ -1,0 +1,108 @@
+.text-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+}
+
+/* form */
+.form__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form__label {
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: var(--title-text-color);
+}
+
+.form__box {
+    position: relative;
+    height: 40px;
+    fill: var(--primery-text-color);
+}
+
+.form__box:focus-within .form__icon {
+    fill: var(--accent-color);
+}
+
+.form__input {
+    padding: 12px 12px 12px 42px;
+    width: 100%;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 250ms var(--timing-function);
+}
+
+.form__input:focus {
+    border-color: var(--accent-color);
+}
+
+.form__icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+
+    transform: translateY(-50%);
+    transition: fill 250ms var(--timing-function);
+}
+
+/* form__end */
+.form__end {
+    margin-bottom: 20px;
+}
+
+.form__textarea {
+    padding: 12px 16px;
+    height: 120px;
+
+    outline: none;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: border-color 250ms var(--timing-function);
+
+&:focus {
+    border-color: var(--accent-color);
+    }
+}
+
+.form__wrapper::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+.form-button {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 52px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+    color: var(--white);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}

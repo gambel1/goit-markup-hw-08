@@ -1,0 +1,38 @@
+.footer-join {
+    display: none;
+}
+.footer-join__title {
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--white);
+}
+
+/* footer-inner */
+.footer-join__inner {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.footer-join__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    outline: none;
+
+    fill: var(--white);
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms var(--timing-function);
+
+&:hover,
+&:focus {
+    background-color: var(--accent-color);
+    }
+}

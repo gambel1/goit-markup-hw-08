@@ -1,6 +1,13 @@
 .work {
+    max-width: 1200px;
     padding-bottom: 94px;
     display: none;
+
+@media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    }
 }
 
 .work__title {

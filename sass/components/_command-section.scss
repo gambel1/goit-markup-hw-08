@@ -1,9 +1,12 @@
 .command {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    max-width: 480px;
 
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    
     background: #F5F4FA;
-    display: none;
 }
 
 .command__title {
@@ -19,17 +22,21 @@
 
 /* command-wrapper */
 .command-wrapper {
-    display: flex;
-    gap: 30px;
+    
+    // gap: 30px;
 }
 
 .command-wrapper__list {
-    width: 270px;
+    width: 450px;
     text-align: center;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     border: transparent solid 1px;
+
+& img {
+    display: inline-block;
+}
 }
 
 .command-wrapper__box {
@@ -58,6 +65,7 @@
 /* command-socials */
 .command-socials {
     display: flex;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -87,4 +95,7 @@
 .command-socials__icon {
     width: 20px;
     height: 20px;
+
+    margin-left: auto;
+    margin-right: auto;
 }

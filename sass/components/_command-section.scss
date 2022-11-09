@@ -7,10 +7,14 @@
     margin-right: auto;
     
     background: #F5F4FA;
+
+@media screen and (min-width: 768px) {
+    max-width: 768px;
+    }
 }
 
 .command__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     font-weight: 700;
     font-size: 36px;
@@ -22,8 +26,17 @@
 
 /* command-wrapper */
 .command-wrapper {
-    
-    // gap: 30px;
+& li {
+    margin-bottom: 30px;
+    }
+& li:last-child {
+    margin-bottom: 0;
+    }
+
+@media screen and (min-width: 768px) {
+    width: 768px;
+    display: flex;
+    }
 }
 
 .command-wrapper__list {
@@ -40,7 +53,7 @@
 }
 
 .command-wrapper__box {
-    padding: 30px 32px;
+    padding: 30px 122px 24px 122px;
 }
 
 .command-wrapper__name {

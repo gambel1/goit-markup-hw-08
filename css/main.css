@@ -225,14 +225,16 @@ p {
   margin-right: auto;
   background: #F5F4FA;
 }
-@media screen and (min-width: 480px) {
-  .command {
-    max-width: 480px;
-  }
-}
 @media screen and (min-width: 768px) {
   .command {
     max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .command {
+    max-width: 1200px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -252,6 +254,12 @@ p {
     width: 768px;
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .command-wrapper {
+    flex-wrap: nowrap;
   }
 }
 
@@ -266,15 +274,35 @@ p {
 .command-wrapper__list:last-child {
   margin-bottom: 0;
 }
+@media screen and (min-width: 768px) {
+  .command-wrapper__list {
+    width: 354px;
+    height: 536px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .command-wrapper__list {
+    width: 270px;
+    height: 428px;
+  }
+}
+
 .command-wrapper__list img {
   display: inline-block;
   width: 450px;
   height: 460px;
 }
 @media screen and (min-width: 768px) {
-  .command-wrapper__list {
+  .command-wrapper__list img {
     width: 354px;
-    height: 536px;
+    height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .command-wrapper__list img {
+    width: 270px;
+    height: 260px;
   }
 }
 
@@ -284,6 +312,11 @@ p {
 @media screen and (min-width: 768px) {
   .command-wrapper__box {
     padding: 30px 74px 24px 74px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .command-wrapper__box {
+    padding: 30px 32px;
   }
 }
 

@@ -243,15 +243,13 @@ p {
 
 /* command-wrapper */
 .command-wrapper li {
-  margin-bottom: 30px;
-}
-.command-wrapper li:last-child {
-  margin-bottom: 0;
+  height: 536px;
 }
 @media screen and (min-width: 768px) {
   .command-wrapper {
     width: 768px;
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -290,6 +288,7 @@ p {
 
 /* command-socials */
 .command-socials {
+  height: 44px;
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -416,9 +415,6 @@ p {
   }
 }
 
-.features__list li {
-  margin-bottom: 30px;
-}
 @media screen and (min-width: 768px) {
   .features__list li {
     width: 354px;
@@ -429,10 +425,6 @@ p {
     width: 270px;
     margin-bottom: 0;
   }
-}
-
-.features__list li:last-child {
-  margin-bottom: 0;
 }
 
 .features__box {

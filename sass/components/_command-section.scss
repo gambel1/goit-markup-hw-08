@@ -27,15 +27,14 @@
 /* command-wrapper */
 .command-wrapper {
 & li {
-    margin-bottom: 30px;
-    }
-& li:last-child {
-    margin-bottom: 0;
+    
+    height: 536px;
     }
 
 @media screen and (min-width: 768px) {
     width: 768px;
     display: flex;
+    flex-wrap: wrap;
     }
 }
 
@@ -77,6 +76,8 @@
 
 /* command-socials */
 .command-socials {
+    height: 44px;
+
     display: flex;
     justify-content: center;
     gap: 10px;

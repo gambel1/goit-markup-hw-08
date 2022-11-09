@@ -243,7 +243,15 @@ p {
 
 /* command-wrapper */
 .command-wrapper li {
-  height: 536px;
+  height: 622px;
+  margin-bottom: 30px;
+}
+.command-wrapper li:last-child {
+  margin-bottom: 0;
+}
+.command-wrapper img {
+  width: 450px;
+  height: 460px;
 }
 @media screen and (min-width: 768px) {
   .command-wrapper {
@@ -288,10 +296,12 @@ p {
 
 /* command-socials */
 .command-socials {
-  height: 44px;
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+.command-socials li {
+  height: 44px;
 }
 
 .command-socials__link {

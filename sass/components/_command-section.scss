@@ -26,9 +26,16 @@
 
 /* command-wrapper */
 .command-wrapper {
-& li {
-    
-    height: 536px;
+    & li {
+        height: 622px;
+        margin-bottom: 30px;
+    }
+    & li:last-child {
+        margin-bottom: 0;
+    }
+    img {
+        width: 450px;
+        height: 460px;
     }
 
 @media screen and (min-width: 768px) {
@@ -76,7 +83,9 @@
 
 /* command-socials */
 .command-socials {
-    height: 44px;
+& li {
+        height: 44px;
+    }
 
     display: flex;
     justify-content: center;

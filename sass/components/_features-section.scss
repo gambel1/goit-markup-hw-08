@@ -30,6 +30,8 @@
     }
 }
 .features__list li {
+    margin-bottom: 30px;
+
 @media screen and (min-width: 768px) {
     width: 354px;
     }
@@ -38,6 +40,9 @@
     width: 270px;
     margin-bottom: 0;
     }
+}
+.features__list li:last-child {
+    margin-bottom: 0;
 }
 
 .features__box {

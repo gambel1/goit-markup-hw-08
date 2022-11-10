@@ -1,10 +1,12 @@
 .button-card {
+    width: 326px;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 50px;
+    
     gap: 8px;
     text-align: center;
-    display: none;
+    
 }
 
 .button-card__item {

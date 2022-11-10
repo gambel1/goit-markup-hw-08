@@ -123,12 +123,12 @@ p {
 }
 
 .button-card {
+  width: 326px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
   gap: 8px;
   text-align: center;
-  display: none;
 }
 
 .button-card__item {
@@ -153,19 +153,16 @@ p {
 }
 
 .card {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  display: none;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 /* Карточки портфолио */
-.reclam {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
 .reclam-link {
+  width: 450px;
   display: block;
   text-decoration: none;
   transition: box-shadow 250ms var(--timing-function);
@@ -1014,7 +1011,6 @@ p {
 .nav {
   display: flex;
   align-items: center;
-  display: none;
 }
 
 .nav__list {

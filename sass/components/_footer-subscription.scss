@@ -12,7 +12,9 @@
 
 /* subscription-form */
 .footer-subscription__form {
-    
+@media screen and (min-width: 1200px) {
+    display: flex;
+}
     
 }
 
@@ -34,6 +36,13 @@
         
     color: rgba(255, 255, 255, 0.6);
     }
+
+@media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+    }
+    
 }
 
 .footer-subscription__button {

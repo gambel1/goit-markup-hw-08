@@ -666,6 +666,12 @@ p {
 }
 
 /* subscription-form */
+@media screen and (min-width: 1200px) {
+  .footer-subscription__form {
+    display: flex;
+  }
+}
+
 .footer-subscription__form input {
   width: 450px;
   margin-bottom: 20px;
@@ -681,6 +687,13 @@ p {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscription__form input {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 }
 
 .footer-subscription__button {

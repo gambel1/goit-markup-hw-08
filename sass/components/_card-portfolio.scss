@@ -26,9 +26,13 @@
     flex-wrap: wrap;
     gap: 30px;
     }
-    // display: flex;
-    // flex-wrap: wrap;
-    // gap: 30px;
+
+@media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    }
+    
 }
 
 .reclam li {
@@ -40,6 +44,7 @@
 
 .reclam-link {
     width: 450px;
+    height: 404px;
     display: block;
     text-decoration: none;
 

@@ -194,6 +194,13 @@ p {
     gap: 30px;
   }
 }
+@media screen and (min-width: 768px) {
+  .reclam {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
 
 .reclam li {
   margin-bottom: 30px;
@@ -205,6 +212,7 @@ p {
 
 .reclam-link {
   width: 450px;
+  height: 404px;
   display: block;
   text-decoration: none;
   transition: box-shadow 250ms var(--timing-function);
@@ -637,7 +645,7 @@ p {
 @media screen and (min-width: 768px) {
   .footer__box {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
     flex-wrap: wrap;
   }

@@ -1,5 +1,5 @@
 .button-card {
-    width: 326px;
+    max-width: 326px;
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
@@ -10,7 +10,6 @@
     max-width: 768px;
 
     justify-content: center;
-    flex-wrap: nowrap;
     margin-bottom: 14px;
     }
 

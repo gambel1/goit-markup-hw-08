@@ -126,9 +126,22 @@ p {
   width: 326px;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
   gap: 8px;
-  text-align: center;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .button-card {
+    max-width: 768px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button-card {
+    max-width: 1200px;
+    margin-bottom: 50px;
+  }
 }
 
 .button-card__item {
@@ -153,14 +166,43 @@ p {
 }
 
 .card {
-  max-width: 480px;
+  width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .card {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card {
+    max-width: 1200px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 /* Карточки портфолио */
+@media screen and (min-width: 768px) {
+  .reclam {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.reclam li {
+  margin-bottom: 30px;
+}
+
+.reclam li:last-child {
+  margin-bottom: 0;
+}
+
 .reclam-link {
   width: 450px;
   display: block;
@@ -169,6 +211,17 @@ p {
 }
 .reclam-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+@media screen and (min-width: 768px) {
+  .reclam-link {
+    width: 354px;
+    height: 440px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .reclam-link {
+    width: 370px;
+  }
 }
 
 .reclam-backdrop {
@@ -574,30 +627,27 @@ p {
     max-width: 768px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer {
-    max-width: 1200px;
+    max-width: 1600px;
+    text-align: left;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer__box {
     display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer-wrap {
-    display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 60px;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer-wrap {
+  .footer__box {
+    width: 1200px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
     margin-bottom: 0;
   }
 }
@@ -650,6 +700,21 @@ p {
 }
 .footer-join__link:hover, .footer-join__link:focus {
   background-color: var(--accent-color);
+}
+
+.footer-subscription {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .footer-subscription {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscription {
+    margin: 0;
+  }
 }
 
 .footer-subscription__text {

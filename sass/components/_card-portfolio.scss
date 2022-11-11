@@ -1,17 +1,41 @@
 .card {
-    max-width: 480px;
+    width: 480px;
 
     margin-left: auto;
     margin-right: auto;
     padding-top: 60px;
     padding-bottom: 60px;
+
+@media screen and (min-width: 768px) {
+    max-width: 768px;
+    }
+
+@media screen and (min-width: 1200px) {
+    max-width: 1200px;
+
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
 }
 
 /* Карточки портфолио */
 .reclam {
+@media screen and (min-width: 768px) {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    }
     // display: flex;
     // flex-wrap: wrap;
     // gap: 30px;
+}
+
+.reclam li {
+    margin-bottom: 30px;
+}
+.reclam li:last-child {
+    margin-bottom: 0;
 }
 
 .reclam-link {
@@ -23,6 +47,15 @@
 
 &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+@media screen and (min-width: 768px) {
+    width: 354px;
+    height: 440px;
+}
+
+@media screen and (min-width: 1200px) {
+    width: 370px;
     }
 }
 

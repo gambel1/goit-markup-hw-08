@@ -21,7 +21,13 @@ li {
     margin-left: auto;
     margin-right: auto;
     padding: 0% 15px 0% 15px;
+
+.container.responsive {
+    min-width: 320px;
+    max-width: 480px;
 }
+}
+
 
 h1,
 h2,

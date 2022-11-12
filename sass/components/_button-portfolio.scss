@@ -1,5 +1,5 @@
 .button-card {
-    max-width: 326px;
+    width: 326px;
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
@@ -7,14 +7,14 @@
     
        
 @media screen and (min-width: 768px) {
-    max-width: 768px;
+    width: 768px;
 
     justify-content: center;
     margin-bottom: 14px;
     }
 
 @media screen and (min-width: 1200px) {
-    max-width: 1200px;
+    width: 1200px;
     margin-bottom: 50px;
     }
 }

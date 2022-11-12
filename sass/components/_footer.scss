@@ -1,5 +1,5 @@
 .footer {
-    max-width: 480px;
+    width: 480px;
     text-align: center;
 
     padding: 60px 0%;
@@ -9,10 +9,10 @@
     background-color: var(--secondaly);
 
 @media screen and (min-width: 768px) {
-    max-width: 768px;
+    width: 768px;
     }
 @media screen and (min-width: 1200px) {
-    max-width: 1600px;
+    width: 1600px;
     text-align: left;
     }
 }

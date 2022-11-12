@@ -33,6 +33,10 @@ li {
   margin-right: auto;
   padding: 0% 15px 0% 15px;
 }
+.container .container.responsive {
+  min-width: 320px;
+  max-width: 480px;
+}
 
 h1,
 h2,
@@ -123,7 +127,7 @@ p {
 }
 
 .button-card {
-  max-width: 326px;
+  width: 326px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -131,14 +135,14 @@ p {
 }
 @media screen and (min-width: 768px) {
   .button-card {
-    max-width: 768px;
+    width: 768px;
     justify-content: center;
     margin-bottom: 14px;
   }
 }
 @media screen and (min-width: 1200px) {
   .button-card {
-    max-width: 1200px;
+    width: 1200px;
     margin-bottom: 50px;
   }
 }
@@ -165,7 +169,7 @@ p {
 }
 
 .card {
-  max-width: 480px;
+  width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
@@ -173,12 +177,12 @@ p {
 }
 @media screen and (min-width: 768px) {
   .card {
-    max-width: 768px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .card {
-    max-width: 1200px;
+    width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -221,6 +225,13 @@ p {
 .reclam-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+@media screen and (min-width: 768px) {
+  .reclam-link {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .reclam-backdrop {
   position: relative;
@@ -262,6 +273,11 @@ p {
   padding: 20px 24px;
   border: 1px solid #EEEEEE;
 }
+@media screen and (min-width: 768px) {
+  .reclam-tools {
+    flex-grow: 1;
+  }
+}
 
 .reclam-title {
   margin-bottom: 4px;
@@ -280,7 +296,7 @@ p {
 }
 
 .command {
-  max-width: 480px;
+  width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
   margin-left: auto;
@@ -289,12 +305,12 @@ p {
 }
 @media screen and (min-width: 768px) {
   .command {
-    max-width: 768px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .command {
-    max-width: 1200px;
+    width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -450,20 +466,25 @@ p {
 }
 
 .clients {
-  max-width: 480px;
+  width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 480px) {
+  .clients {
+    width: 480px;
+  }
+}
 @media screen and (min-width: 768px) {
   .clients {
-    max-width: 768px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .clients {
-    max-width: 1200px;
+    width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -530,7 +551,7 @@ p {
 }
 
 .features {
-  max-width: 480px;
+  width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
   margin-left: auto;
@@ -538,12 +559,12 @@ p {
 }
 @media screen and (min-width: 768px) {
   .features {
-    max-width: 768px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .features {
-    max-width: 1200px;
+    width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -613,7 +634,7 @@ p {
 }
 
 .footer {
-  max-width: 480px;
+  width: 480px;
   text-align: center;
   padding: 60px 0%;
   margin-left: auto;
@@ -622,12 +643,12 @@ p {
 }
 @media screen and (min-width: 768px) {
   .footer {
-    max-width: 768px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer {
-    max-width: 1600px;
+    width: 1600px;
     text-align: left;
   }
 }
@@ -798,7 +819,7 @@ p {
 }
 
 .hero {
-  max-width: 480px;
+  width: 480px;
   height: 400px;
   padding: 118px 0;
   margin-right: auto;
@@ -811,13 +832,13 @@ p {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
+    width: 768px;
     height: 400px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1600px;
+    width: 1600px;
     height: 600px;
     padding: 200px 0;
   }
@@ -1112,7 +1133,7 @@ p {
 }
 
 .work {
-  max-width: 1200px;
+  width: 1200px;
   padding-bottom: 94px;
   display: none;
 }

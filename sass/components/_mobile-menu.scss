@@ -1,0 +1,22 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 48px 83px 48px 40px;
+    background-color: var(--white);
+
+    display: none;
+
+&.is-open {
+    display: block;
+}
+
+&__close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+}
+}

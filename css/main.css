@@ -33,9 +33,20 @@ li {
   margin-right: auto;
   padding: 0% 15px 0% 15px;
 }
-.container .container.responsive {
-  min-width: 320px;
-  max-width: 480px;
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 h1,
@@ -127,7 +138,6 @@ p {
 }
 
 .button-card {
-  width: 326px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -169,7 +179,6 @@ p {
 }
 
 .card {
-  width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
@@ -296,7 +305,6 @@ p {
 }
 
 .command {
-  width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
   margin-left: auto;
@@ -467,7 +475,6 @@ p {
 }
 
 .clients {
-  width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
   margin-left: auto;
@@ -552,7 +559,6 @@ p {
 }
 
 .features {
-  width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
   margin-left: auto;
@@ -635,7 +641,6 @@ p {
 }
 
 .footer {
-  width: 480px;
   text-align: center;
   padding: 60px 0%;
   margin-left: auto;
@@ -807,7 +812,6 @@ p {
 }
 
 .header {
-  width: 480px;
   padding: 10px 0%;
   border-bottom: 1px solid #ECECEC;
 }
@@ -827,7 +831,6 @@ p {
 }
 
 .hero {
-  width: 480px;
   height: 400px;
   padding: 118px 0;
   margin-right: auto;
@@ -1160,7 +1163,6 @@ p {
 }
 
 .work {
-  width: 1200px;
   padding-bottom: 94px;
   display: none;
 }

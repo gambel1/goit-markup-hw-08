@@ -4,9 +4,6 @@
 
     margin-left: auto;
     margin-right: auto;
-
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .clients__title {
@@ -36,6 +33,9 @@
 @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
     }
+}
+.clients__list li {
+    width: calc((100% - 30px) /2);
 }
 
 .clients__link {

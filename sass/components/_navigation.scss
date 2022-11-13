@@ -1,7 +1,11 @@
 .nav {
-   display: flex;
-   align-items: center;
+   // display: flex;
+   // align-items: center;
    display: none;
+
+@media screen and (min-width: 768px) {
+   display: flex;
+   }
 }
 .nav__list {
    display: flex;

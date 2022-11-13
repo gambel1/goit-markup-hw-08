@@ -1,17 +1,22 @@
 .header {
-    padding: 10px 0%;
+    padding: 10px 10px 10px 15px;
     border-bottom: 1px solid #ECECEC;
 
+@media screen and (min-width: 768px) {
+    padding: 21px 21px 15px;
+    }
+
+@media screen and (min-width: 1200px) {
+    padding: 24px 0;
+    }
+}
+
 .header__box {
+    margin-left: 0;
+    margin-right: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-
-.header__logo {
-    margin-right: 93px;
-}
 }
 
 .header__mobile-button {
@@ -19,4 +24,8 @@
     border: 0;
     
     background-color: var(--white);
+
+@media screen and (min-width: 768px) {
+    display: none;
+    }
 }

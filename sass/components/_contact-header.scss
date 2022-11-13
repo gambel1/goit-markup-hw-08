@@ -1,9 +1,25 @@
 .contact {
-   display: flex;
-   margin-left: auto;
-   gap: 50px;
+   // display: flex;
+   // margin-left: auto;
+   // gap: 50px;
    display: none;
+
+@media screen and (min-width: 768px) {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   }
+
+@media screen and (min-width: 1200px) {
+   flex-direction: row;
+   gap: 30px;
+   }
 }
+// .contact__list {
+// @media screen and (min-width: 768px) {
+
+//    }
+// }
 .contact__link {
    font-weight: 500;
    line-height: 1.14;

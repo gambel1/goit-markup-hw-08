@@ -1095,12 +1095,6 @@ p {
   right: 15px;
 }
 
-.mobile-nav__list {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
 .mobile-nav__link {
   font-weight: 500;
   font-size: 40px;

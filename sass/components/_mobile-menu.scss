@@ -22,8 +22,17 @@
 }
 
 .mobile-nav__link {
+    display: block;
+    margin-bottom: 32px;
+
     font-weight: 500;
     font-size: 40px;
-    line-height: 47px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
+
+    text-decoration: none;
+
+&__last {
+    margin-bottom: 0;
+}
 }

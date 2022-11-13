@@ -31,7 +31,7 @@
 }
 
 .footer-subscription__form input {
-    width: 450px;
+    width: 100%;
     margin-bottom: 20px;
     padding: 15px 0 15px 16px;
 
@@ -47,6 +47,10 @@
     letter-spacing: 0.03em;
         
     color: rgba(255, 255, 255, 0.6);
+    }
+
+@media screen and (min-width: 768px) {
+    width: 450px;
     }
 
 @media screen and (min-width: 1200px) {

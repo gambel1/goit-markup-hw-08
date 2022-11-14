@@ -11,8 +11,13 @@
     background-color: #C4C4C4;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-    url(../images/overlay.jpg);
+    url(../images/hero-background-img.jpg);
 
+@media (min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi), /*dots per inch*/
+    (min-resolution: 2dppx) /*dots per pixel*/ {
+    background-image: url(../../images/hero-background-img@2x.jpg);
+    }
 
 @media screen and (min-width: 768px) {
     max-width: 768px;
@@ -46,7 +51,6 @@
 @media screen and (min-width: 1200px) {
     max-width: 700px;
     font-size: 44px;
-    line-height: 1.36;
     }
 }
 

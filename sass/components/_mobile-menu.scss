@@ -88,7 +88,8 @@
 }
 .mobile-social__list::after {
     content: "";
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    margin-right: 10px;
 }
 .mobile-social__link {
     font-weight: 500;

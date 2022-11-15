@@ -331,7 +331,6 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .command-wrapper {
-    width: 1200px;
     flex-wrap: nowrap;
   }
 }
@@ -349,28 +348,7 @@ p {
 }
 @media screen and (min-width: 768px) {
   .command-wrapper__list {
-    width: 354px;
-    height: 536px;
     margin-bottom: 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .command-wrapper__list {
-    width: 270px;
-    height: 428px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .command-wrapper__img {
-    width: 354px;
-    height: 374px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .command-wrapper__img {
-    width: 270px;
-    height: 260px;
   }
 }
 

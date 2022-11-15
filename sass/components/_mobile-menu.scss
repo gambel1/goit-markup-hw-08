@@ -83,11 +83,18 @@
 .mobile-social {
     display: flex;
     gap: 10px;
+
+& li {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+    }
+
+& li:last-child {
+    border: none;
+    padding: 0;
+    }
 }
-// .mobile-social__list::after {
-//     content: "";
-//     border-right: 1px solid rgba(33, 33, 33, 0.2);
-// }
+
 .mobile-social__link {
     font-weight: 500;
     font-size: 18px;
@@ -95,6 +102,7 @@
     letter-spacing: 0.02em;
 
     text-decoration: none;
+    
     color: var(--accent-color);
     transition: color 250ms var(--timing-function);
 
@@ -104,6 +112,7 @@
     outline: auto;
     }
 }
+
 .mobile-social__item {
     border: 1px solid rgba(33, 33, 33, 0.2);
     

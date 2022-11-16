@@ -60,12 +60,6 @@
     transition: fill 250ms var(--timing-function),
     border-color 250ms var(--timing-function);
 
-&:hover,
-&:focus {
-    fill: var(--accent-color);
-    border-color: var(--accent-color);
-    }
-
 @media screen and (min-width: 480px) {
     width: 210px;
 }
@@ -77,6 +71,12 @@
 @media screen and (min-width: 1200px) {
     width: 170px;
     }
+}
+
+.clients__link:hover,
+.clients__link:focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 .clients__icon {

@@ -23,7 +23,7 @@
 }
 .nav__link:hover,
 .nav__link--current,
-.mobile-nav__link--current, 
+.mobile-nav__link.mobile-nav__link--current /*Повысил специфичность*/,
 .nav__link:focus { 
    color: var(--accent-color);
 }

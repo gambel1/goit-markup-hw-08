@@ -149,7 +149,7 @@ p {
   .button-card {
     width: 768px;
     justify-content: center;
-    margin-bottom: 14px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -313,11 +313,17 @@ p {
 .command__title {
   margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .command__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 /* command-wrapper */
@@ -436,6 +442,7 @@ p {
 
 .contact__link {
   font-weight: 500;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -443,6 +450,11 @@ p {
   color: var(--title-text-color);
   fill: currentColor;
   transition: color 250ms var(--timing-function);
+}
+@media screen and (min-width: 1200px) {
+  .contact__link {
+    font-size: 14px;
+  }
 }
 .contact__link:hover, .contact__link:focus {
   color: var(--accent-color);
@@ -453,6 +465,12 @@ p {
   padding-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__title {
@@ -492,7 +510,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 210px;
+  width: 100%;
   height: 92px;
   border: 1px solid var(--fill-icon);
   border-radius: 4px;
@@ -587,7 +605,13 @@ p {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: start;
+  }
 }
 
 .features__item {
@@ -859,6 +883,7 @@ p {
   .hero-title {
     max-width: 700px;
     font-size: 44px;
+    line-height: 1.36;
   }
 }
 

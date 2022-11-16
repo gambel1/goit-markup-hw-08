@@ -15,13 +15,9 @@
    gap: 30px;
    }
 }
-// .contact__list {
-// @media screen and (min-width: 768px) {
-
-//    }
-// }
 .contact__link {
    font-weight: 500;
+   font-size: 12px;
    line-height: 1.14;
    letter-spacing: 0.02em;
 
@@ -32,6 +28,10 @@
    fill: currentColor;
 
    transition: color 250ms var(--timing-function);
+
+@media screen and (min-width: 1200px) {
+   font-size: 14px;
+   }
 
 &:hover,
 &:focus {

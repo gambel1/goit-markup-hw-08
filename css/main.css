@@ -532,9 +532,6 @@ p {
   }
 }
 
-.features__list li {
-  margin-bottom: 30px;
-}
 @media screen and (min-width: 768px) {
   .features__list li {
     width: 354px;

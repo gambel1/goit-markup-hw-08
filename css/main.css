@@ -423,43 +423,6 @@ p {
   margin-right: auto;
 }
 
-.contact {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .contact {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contact {
-    flex-direction: row;
-    gap: 30px;
-  }
-}
-
-.contact__link {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  outline: none;
-  color: var(--title-text-color);
-  fill: currentColor;
-  transition: color 250ms var(--timing-function);
-}
-@media screen and (min-width: 1200px) {
-  .contact__link {
-    font-size: 14px;
-  }
-}
-.contact__link:hover, .contact__link:focus {
-  color: var(--accent-color);
-}
-
 .clients {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -521,6 +484,11 @@ p {
 .clients__link:hover, .clients__link:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .clients__link {
+    width: 210px;
+  }
 }
 @media screen and (min-width: 768px) {
   .clients__link {
@@ -812,7 +780,6 @@ p {
   align-items: center;
   justify-content: space-between;
 }
-
 .header__mobile-button {
   padding: 0;
   border: 0;
@@ -821,6 +788,95 @@ p {
 @media screen and (min-width: 768px) {
   .header__mobile-button {
     display: none;
+  }
+}
+
+.contact {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    flex-direction: row;
+    gap: 30px;
+    margin-left: auto;
+  }
+}
+
+.contact__link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  outline: none;
+  color: var(--title-text-color);
+  fill: currentColor;
+  transition: color 250ms var(--timing-function);
+}
+@media screen and (min-width: 1200px) {
+  .contact__link {
+    font-size: 14px;
+  }
+}
+.contact__link:hover, .contact__link:focus {
+  color: var(--accent-color);
+}
+
+.nav {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
+}
+
+.nav__list {
+  display: flex;
+  gap: 50px;
+}
+
+.nav__link {
+  position: relative;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  outline: none;
+  color: var(--primery-text-color);
+  transition: color 250ms var(--timing-function);
+}
+
+.nav__link:hover,
+.nav__link--current,
+.mobile-nav__link--current,
+.nav__link:focus {
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .nav__link--current::after {
+    content: "";
+    position: absolute;
+    display: block;
+    margin-top: 26px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    transition: opacity 250ms var(--timing-function);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav__link--current::after {
+    margin-top: 28px;
   }
 }
 
@@ -920,13 +976,16 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .logo {
+    margin-right: 92px;
     font-size: 26px;
   }
 }
-.logo .logo-black {
+
+.logo-black {
   color: #000000;
 }
-.logo .logo-white {
+
+.logo-white {
   color: var(--white);
 }
 
@@ -1233,57 +1292,6 @@ p {
 
 .mobile-social__item {
   border: 1px solid rgba(33, 33, 33, 0.2);
-}
-
-.nav {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .nav {
-    display: flex;
-  }
-}
-
-.nav__list {
-  display: flex;
-  gap: 50px;
-}
-
-.nav__link {
-  position: relative;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  outline: none;
-  color: var(--primery-text-color);
-  transition: color 250ms var(--timing-function);
-}
-
-.nav__link:hover,
-.nav__link--current,
-.mobile-nav__link--current,
-.nav__link:focus {
-  color: var(--accent-color);
-}
-
-@media screen and (min-width: 768px) {
-  .nav__link--current::after {
-    content: "";
-    position: absolute;
-    display: block;
-    margin-top: 26px;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--accent-color);
-    transition: opacity 250ms var(--timing-function);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .nav__link--current::after {
-    margin-top: 28px;
-  }
 }
 
 .work {

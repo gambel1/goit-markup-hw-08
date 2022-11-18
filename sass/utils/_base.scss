@@ -23,15 +23,15 @@ li {
     margin-right: auto;
     padding: 0% 15px 0% 15px;
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px /*от 480px и выше*/) {
     width: 480px;
     }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px /*от 768px и выше*/) {
     width: 768px;
     }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px /*от 1200px и выше*/) {
     width: 1200px;
     }
 }

@@ -43,11 +43,13 @@
     border-radius: 4px;
     outline: none;
     transition: border-color 250ms var(--timing-function);
+
+&:focus {
+    border-color: var(--accent-color);
+    }
 }
 
-.form__input:focus {
-    border-color: var(--accent-color);
-}
+
 
 .form__icon {
     position: absolute;
@@ -88,6 +90,7 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
+
 .form-button {
     display: flex;
     margin-left: auto;

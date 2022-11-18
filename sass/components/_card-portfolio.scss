@@ -18,7 +18,6 @@
     flex-wrap: wrap;
     gap: 30px;
     }
-    
 }
 
 .reclam li {
@@ -38,25 +37,34 @@
     margin-bottom: 0;
 }
 
-.reclam-link {
+.reclam__link {
     height: 100%;
+
     display: flex;
     flex-direction: column;
+
     text-decoration: none;
-    
+    outline: none;
     transition: box-shadow 250ms var(--timing-function);
 
-&:hover {
+&:hover,
+&:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
 }
 
-.reclam-backdrop {
+.reclam__backdrop {
     position: relative;
     overflow: hidden;
+
+&:hover::after {
+    transform: translateY(0);
+    }
 }
 
-.reclam-box {
+
+
+.reclam__box {
     position: absolute;
     top: 0;
     left: 0;
@@ -69,15 +77,11 @@
     transition: transform 250ms var(--timing-function);
 }
 
-.reclam-backdrop:hover::after {
+.reclam__link:hover .reclam__box {
     transform: translateY(0);
 }
 
-.reclam-link:hover .reclam-box {
-    transform: translateY(0);
-}
-
-.reclam-text {
+.reclam__text {
     padding: 63px 24px;
 
     font-size: 18px;
@@ -91,7 +95,7 @@
     }
 }
 
-.reclam-tools {
+.reclam__tools {
     flex-grow: 1;
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
@@ -101,7 +105,7 @@
     }
 }
 
-.reclam-title {
+.reclam__title {
     margin-bottom: 4px;
 
     font-weight: 700;
@@ -111,7 +115,7 @@
     color: var(--primery-text-color);
 }
 
-.reclam-item {
+.reclam__item {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;

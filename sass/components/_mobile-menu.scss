@@ -15,6 +15,7 @@
     flex-direction: column;
     }
 }
+
 .mobile-menu__close-button {
     position: absolute;
     top: 10px;
@@ -61,6 +62,7 @@
     margin-bottom: 64px;
     }
 }
+
 .mobile-contact__phone {
     font-weight: 500;
     font-size: 34px;
@@ -70,6 +72,7 @@
 
     color: var(--accent-color);
 }
+
 .mobile-contact__link {
     font-weight: 500;
     font-size: 24px;
@@ -115,5 +118,4 @@
 
 .mobile-social__item {
     border: 1px solid rgba(33, 33, 33, 0.2);
-    
 }

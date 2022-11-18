@@ -7,13 +7,15 @@
 .address__list li {
     margin-bottom: 8px;
 
+& li:last-child {
+    margin-bottom: 0;
+    }
+
 @media screen and (min-width: 1200px) {
     margin-bottom: 0;
     }
 }
-.address__list li:last-child {
-    margin-bottom: 0;
-}
+
 .address__list {
 @media screen and (min-width: 1200px) {
     display: flex;
@@ -21,7 +23,6 @@
     gap: 9px;
     }
 }
-
 
 .address__text {
     line-height: 1.7;

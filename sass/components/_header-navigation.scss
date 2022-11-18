@@ -5,10 +5,12 @@
    display: flex;
    }
 }
+
 .nav__list {
    display: flex;
    gap: 50px;
 }
+
 .nav__link {
    position: relative;
 
@@ -21,12 +23,14 @@
    color: var(--primery-text-color);
    transition: color 250ms var(--timing-function);
 }
+
 .nav__link:hover,
 .nav__link--current,
-.mobile-nav__link.mobile-nav__link--current /*Повысил специфичность*/,
+.mobile-nav__link.mobile-nav__link--current, /*Повысил специфичность (.mobile-nav__link.mobile-nav__link--current)*/
 .nav__link:focus { 
    color: var(--accent-color);
 }
+
 .nav__link--current::after {
 @media screen and (min-width: 768px) {
    content: "";

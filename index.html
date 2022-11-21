@@ -162,11 +162,16 @@
                             <div class="work__element">
                                 <p>десктопні додатки</p>
                             </div>
-                            <img 
-                            srcset="./images/tablet.jpg 1x, 
-                                    ./images/tablet@2x.jpg 2x"
-                            src="./images/tablet.jpg" 
-                            alt="людина дивиться у планшет і друкує текст" width="370">
+                                <picture>
+                                    <source srcset="./images/tablet.webp 1x, 
+                                                    ./images/tablet@2x.webp 2x"
+                                                    type="image/webp"/>
+
+                                    <source srcset="./images/tablet.jpg 1x, 
+                                                    ./images/tablet@2x.jpg 2x"/>
+                                    <img src="./images/tablet.jpg" 
+                                    alt="людина дивиться у планшет і друкує текст" width="370">
+                                </picture>
                         </div>
                     </li>
                     <li>
@@ -174,23 +179,33 @@
                             <div class="work__element">
                                 <p>мобільні додатки</p>
                             </div>
-                            <img 
-                            srcset="./images/notpad.jpg 1x, 
-                                    ./images/notpad@2x.jpg 2x"
-                            src="./images/notpad.jpg" 
-                            alt="дівчина дивиться у телефон і параллельно у компьютер" width="370">
-                        </div>
+                                <picture>
+                                    <source srcset="./images/notpad.webp 1x, 
+                                                    ./images/notpad@2x.webp 2x"
+                                                    type="image/webp"/>
+
+                                    <source srcset="./images/notpad.jpg 1x, 
+                                                    ./images/notpad@2x.jpg 2x"/>
+                                    <img src="./images/notpad.jpg"
+                                    alt="дівчина дивиться у телефон і параллельно у компьютер" width="370"/>
+                                </picture>
+                            </div>
                     </li>
                     <li>
                         <div class="work__box">
                             <div class="work__element">
                                 <p>дизайнерські рішення</p> 
                             </div>
-                            <img 
-                            srcset="./images/smartphone.jpg 1x, 
-                                    ./images/smartphone@2x.jpg 2x"
-                            src="./images/smartphone.jpg" 
-                            alt="дівчина дивиться у смартфон" width="370">
+                                <picture>
+                                    <source srcset="./images/smartphone.webp 1x,
+                                                    ./images/smartphone@2x.webp 2x"
+                                                    type="image/webp">
+                                    
+                                    <source srcset="./images/smartphone.jpg 1x,
+                                                    ./images/smartphone@2x.jpg 2x"/>
+                                    <img src="./images/smartphone.jpg" 
+                                    alt="дівчина дивиться у смартфон" width="370"/>
+                                </picture>
                         </div>
                     </li>
                 </ul>
@@ -208,15 +223,31 @@
                 <ul class="command-wrapper">
                     <li class="command-wrapper__list">
                         <picture>
+
+                            <source srcset="./images/igor-450.webp 1x,
+                                            ./images/igor-450@2x.webp 2x" 
+                                            media="(max-width: 767px)"
+                                            type="image/webp"/>
+
                             <source srcset="./images/igor-450.jpg 1x,
                                             ./images/igor-450@2x.jpg 2x" 
                                             media="(max-width: 767px)"/>
+
+                            <source srcset="./images/igor-354.webp 1x,
+                                            ./images/igor-354@2x.webp 2x" 
+                                            media="(min-width: 768px)"
+                                            type="image/webp"/>
                                             
-                                            <source srcset="./images/igor-354.jpg 1x,
+                            <source srcset="./images/igor-354.jpg 1x,
                                             ./images/igor-354@2x.jpg 2x" 
                                             media="(min-width: 768px)"/>
+
+                            <source srcset="./images/igor-270.webp 1x,
+                                            ./images/igor-270@2x.webp 2x" 
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"/>
                                             
-                                            <source srcset="./images/igor-270.jpg 1x,
+                            <source srcset="./images/igor-270.jpg 1x,
                                             ./images/igor-270@2x.jpg 2x" 
                                             media="(min-width: 1200px)"/>
                             <img src="./images/igor-450.jpg" 
@@ -272,15 +303,30 @@
                 
                     <li class="command-wrapper__list">
                         <picture>
+                            <source srcset="./images/olga-450.webp 1x,
+                                            ./images/olga-450@2x.webp 2x"
+                                            media="(max-width: 767px)"
+                                            type="image/webp"/>
+
                             <source srcset="./images/olga-450.jpg 1x,
                                             ./images/olga-450@2x.jpg 2x"
                                             media="(max-width: 767px)"/>
                                             
-                                            <source srcset="./images/olga-354.jpg 1x,
+                            <source srcset="./images/olga-354.webp 1x,
+                                            ./images/olga-354@2x.webp 2x"
+                                            media="(min-width: 768px)"
+                                            type="image/webp"/>
+
+                            <source srcset="./images/olga-354.jpg 1x,
                                             ./images/olga-354@2x.jpg 2x"
                                             media="(min-width: 768px)"/>
                                             
-                                            <source srcset="./images/olga-270.jpg 1x,
+                            <source srcset="./images/olga-270.webp 1x,
+                                            ./images/olga-270@2x.webp 2x"
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"/>
+
+                            <source srcset="./images/olga-270.jpg 1x,
                                             ./images/olga-270@2x.jpg 2x" 
                                             media="(min-width: 1200px)"/>
                             <img src="./images/olga-450.jpg" 
@@ -336,15 +382,30 @@
                 
                     <li class="command-wrapper__list">
                         <picture>
+                            <source srcset="./images/mikola-450.webp 1x,
+                                            ./images/mikola-450@2x.webp 2x" 
+                                            media="(max-width: 767px)"
+                                            type="image/webp"/>
+
                             <source srcset="./images/mikola-450.jpg 1x,
                                             ./images/mikola-450@2x.jpg 2x" 
-                                            media="(max-width: 767px)"/>
+                                            media="(max-width: 767px)" />
+
+                            <source srcset="./images/mikola-354.webp 1x,
+                                            ./images/mikola-354@2x.webp 2x" 
+                                            media="(min-width: 768px)"
+                                            type="image/webp"/>
                                             
-                                            <source srcset="./images/mikola-354.jpg 1x,
+                            <source srcset="./images/mikola-354.jpg 1x,
                                             ./images/mikola-354@2x.jpg 2x" 
                                             media="(min-width: 768px)"/>
+
+                            <source srcset="./images/mikola-270.webp 1x,
+                                            ./images/mikola-270@2x.webp 2x" 
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"/>
                                             
-                                            <source srcset="./images/mikola-270.jpg 1x,
+                            <source srcset="./images/mikola-270.jpg 1x,
                                             ./images/mikola-270@2x.jpg 2x" 
                                             media="(min-width: 1200px)"/>
                             <img src="./images/mikola-450.jpg" 
@@ -400,15 +461,30 @@
                                 
                     <li class="command-wrapper__list">
                         <picture>
+                            <source srcset="./images/mikhaylo-450.webp 1x,
+                                            ./images/mikhaylo-450@2x.webp 2x" 
+                                            media="(max-width: 767px)"
+                                            type="image/webp"/>
+
                             <source srcset="./images/mikhaylo-450.jpg 1x,
                                             ./images/mikhaylo-450@2x.jpg 2x" 
                                             media="(max-width: 767px)"/>
                                             
-                                            <source srcset="./images/mikhaylo-354.jpg 1x,
+                            <source srcset="./images/mikhaylo-354.webp 1x,
+                                            ./images/mikhaylo-354@2x.webp 2x" 
+                                            media="(min-width: 768px)"
+                                            type="image/webp"/>
+
+                            <source srcset="./images/mikhaylo-354.jpg 1x,
                                             ./images/mikhaylo-354@2x.jpg 2x" 
                                             media="(min-width: 768px)"/>
                                             
-                                            <source srcset="./images/mikhaylo-270.jpg 1x,
+                            <source srcset="./images/mikhaylo-270.webp 1x,
+                                            ./images/mikhaylo-270@2x.webp 2x" 
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"/>
+
+                            <source srcset="./images/mikhaylo-270.jpg 1x,
                                             ./images/mikhaylo-270@2x.jpg 2x" 
                                             media="(min-width: 1200px)"/>
                             <img src="./images/mikhaylo-450.jpg" 

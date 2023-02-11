@@ -1,733 +1,905 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.min.css">
-</head>
-<body>
-    <header class="header">
-
-        <div class="container header__box">
-            <a lang="en" class="logo header__logo" href="./index.html">Web<span class="logo-black">Studio</span></a>
-            <button class="header__mobile-button js-open-menu" type="button">
-                <svg width="40" height="40">
-                    <use href="./images/icons.svg#icon-mobile-icon-open">
-                    </use>
-                </svg>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li>
-                        <a class="nav__link" href="./index.html">Студія</a>
-                    </li>
-                    <li>
-                        <a class="nav__link nav__link--current" href="./portfolio.html">Портфоліо</a>
-                    </li>
-                    <li>
-                        <a class="nav__link" href="#">Контакти</a>
-                    </li>
-                </ul>
-            </nav>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header data-aos="fade-down" data-aos-duration="1500" class="header">
+      <div class="container header__box">
+        <a lang="en" class="logo header__logo" href="./index.html"
+          >Web<span class="logo-black">Studio</span></a
+        >
+        <button class="header__mobile-button js-open-menu" type="button">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-mobile-icon-open"></use>
+          </svg>
+        </button>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li>
+              <a class="nav__link" href="./index.html">Студія</a>
+            </li>
+            <li>
+              <a class="nav__link nav__link--current" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li>
+              <a class="nav__link" href="#">Контакти</a>
+            </li>
+          </ul>
+        </nav>
         <ul class="contact">
-            <li>
-                <a lang="en" class="contact__link" href="mailto:info@devstudio.com">
-                    <svg width="16" height="12">
-                        <use href="./images/icons.svg#icon-mail">
-                        </use>
-                    </svg>
-                    info@devstudio.com
-                </a>
-            </li>
-            <li>
-                <a class="contact__link" href="tel:+380961111111">
-                    <svg width="10" height="15">
-                        <use href="./images/icons.svg#icon-tel">
-                        </use>
-                    </svg>
-                    +38 096 111 11 11
-                </a>
-            </li>
+          <li>
+            <a lang="en" class="contact__link" href="mailto:info@devstudio.com">
+              <svg width="16" height="12">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li>
+            <a class="contact__link" href="tel:+380961111111">
+              <svg width="10" height="15">
+                <use href="./images/icons.svg#icon-tel"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
         </ul>
-        </div>
-
+      </div>
     </header>
 
     <main>
-
-        <section class="card">
-
+      <section class="card">
         <div class="container">
-            <h1 class="visually-hidden">
-                Портфоліо
-            </h1>
+          <h1 class="visually-hidden">Портфоліо</h1>
 
-        <ul class="button-card">
+          <ul data-aos="flip-right" data-aos-duration="1500" class="button-card">
             <li>
-                <button class="button-card__item" type="button">Усі</button>
+              <button class="button-card__item" type="button">Усі</button>
             </li>
             <li>
-                <button class="button-card__item" type="button">Веб-сайти</button>
+              <button class="button-card__item" type="button">Веб-сайти</button>
             </li>
             <li>
-                <button class="button-card__item" type="button">Додатки</button>
+              <button class="button-card__item" type="button">Додатки</button>
             </li>
             <li>
-                <button class="button-card__item" type="button">Дизайн</button>
+              <button class="button-card__item" type="button">Дизайн</button>
             </li>
             <li>
-                <button class="button-card__item" type="button">Маркетинг</button>
+              <button class="button-card__item" type="button">Маркетинг</button>
             </li>
-        </ul>
+          </ul>
 
-        <div class="flex-container">
-        <ul class="reclam">
-            
-            <li>
+          <div data-aos="flip-up" data-aos-duration="1500" class="flex-container">
+            <ul class="reclam">
+              <li>
                 <a href="" class="reclam__link">
-                    <div class="reclam__backdrop">
-                        <picture>
-                            <source srcset="
-                                            ./images/technokriack-450.webp 1x,
-                                            ./images/technokriack-450@2x.webp 2x"
-                                            type="image/webp"/>
+                  <div class="reclam__backdrop">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/technokriack-450.webp    1x,
+                          ./images/technokriack-450@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
 
-                            <source srcset="
-                                            ./images/technokriack-450.jpg 1x,
-                                            ./images/technokriack-450@2x.jpg 2x"/>
-                                            
-                            <source srcset="
-                                            ./images/technokriack-354.webp 1x,
-                                            ./images/technokriack-354@2x.webp 2x" 
-                                            media="(min-width: 768px)" 
-                                            type="image/webp"/>
+                      <source
+                        srcset="
+                          ./images/technokriack-450.jpg    1x,
+                          ./images/technokriack-450@2x.jpg 2x
+                        "
+                      />
 
-                            <source srcset="
-                                            ./images/technokriack-354.jpg 1x,
-                                            ./images/technokriack-354@2x.jpg 2x"
-                                            media="(min-width: 768px)"/>
+                      <source
+                        srcset="
+                          ./images/technokriack-354.webp    1x,
+                          ./images/technokriack-354@2x.webp 2x
+                        "
+                        media="(min-width: 768px)"
+                        type="image/webp"
+                      />
 
-                            <source srcset="
-                                            ./images/technokriack-370.webp 1x,
-                                            ./images/technokriack-370@2x.webp 2x" 
-                                            media="(min-width: 1200px)"
-                                            type="image/webp"/>
-                            
-                            <source srcset="
-                                            ./images/technokriack-370.jpg 1x,
-                                            ./images/technokriack-370@2x.jpg 2x"
-                                            media="(min-width: 1200px)"/>
-                            <img src="./images/technokriack-450.jpg" 
-                            alt="зображення хлопця і дівчат"/>
-                        </picture>
-                        <div class="reclam__box">
-                            <p class="reclam__text">
-                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                                вичерпні відомості про компанію чи приватну особу.
-                            </p>
-                        </div>
-                    </div>
-                <div class="reclam__tools">
-                <h2 class="reclam__title">
-                    Технокряк
-                </h2>
-                <p class="reclam__item">
-                    Веб-сайт
-                </p>
-                </div>
-                </a>
-            </li>
-                        
-            <li>
-                <a href="" class="reclam__link">
-                    <div class="reclam__backdrop">
-                        <picture>
+                      <source
+                        srcset="
+                          ./images/technokriack-354.jpg    1x,
+                          ./images/technokriack-354@2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
 
-                            <source srcset="
-                                            ./images/basketball-450.webp 1x,
-                                            ./images/basketball-450@2x.webp 2x"
-                                            type="image/webp"/>
+                      <source
+                        srcset="
+                          ./images/technokriack-370.webp    1x,
+                          ./images/technokriack-370@2x.webp 2x
+                        "
+                        media="(min-width: 1200px)"
+                        type="image/webp"
+                      />
 
-                            <source srcset="
-                                            ./images/basketball-450.jpg 1x,
-                                            ./images/basketball-450@2x.jpg 2x"/>
-                        
-                            <source srcset="
-                                            ./images/basketball-354.webp 1x,
-                                            ./images/basketball-354@2x.webp 2x" 
-                                            media="(min-width: 768px)"
-                                            type="image/webp"/>
-
-                            <source srcset="
-                                            ./images/basketball-354.jpg 1x,
-                                            ./images/basketball-354@2x.jpg 2x" 
-                                            media="(min-width: 768px)"/>
-                        
-                            <source srcset="
-                                            ./images/basketball-370.webp 1x,
-                                            ./images/basketball-370@2x.webp 2x" 
-                                            media="(min-width: 1200px)"
-                                            type="image/webp"/>
-
-                            <source srcset="
-                                            ./images/basketball-370.jpg 1x,
-                                            ./images/basketball-370@2x.jpg 2x" 
-                                            media="(min-width: 1200px)"/>
-                            <img src="./images/basketball-450.jpg" 
-                            alt="гра у баскетбол"/>
-                        </picture>
-                        <div class="reclam__box">
-                            <p class="reclam__text">
-                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                                вичерпні відомості про компанію чи приватну особу.
-                            </p>
-                        </div>
-                    </div>
-                <div class="reclam__tools">
-                <h2 class="reclam__title">
-                    Постер New Orlean vs Golden Star
-                </h2>
-                <p class="reclam__item">
-                    Дизайн
-                </p>
-                </div>
-                </a>
-            </li>
-                        
-            <li>
-                <a href="" class="reclam__link">
-                    <div class="reclam__backdrop">
-                        <picture>
-                            <source srcset="
-                                            ./images/restaurant-450.webp 1x,
-                                            ./images/restaurant-450@2x.webp 2x" 
-                                            type="image/webp"/>
-
-                            <source srcset="
-                                            ./images/restaurant-450.jpg 1x,
-                                            ./images/restaurant-450@2x.jpg 2x"/>
-
-                            <source srcset="
-                                            ./images/restaurant-354.webp 1x,
-                                            ./images/restaurant-354@2x.webp 2x" 
-                                            media="(min-width: 768px)" 
-                                            type="image/webp"/>
-                        
-                            <source srcset="
-                                            ./images/restaurant-354.jpg 1x,
-                                            ./images/restaurant-354@2x.jpg 2x" 
-                                            media="(min-width: 768px)"/>
-                        
-                            <source srcset="
-                                            ./images/restaurant-370.webp 1x,
-                                            ./images/restaurant-370@2x.webp 2x" 
-                                            media="(min-width: 1200px)"
-                                            type="image/webp"/>
-
-                            <source srcset="
-                                            ./images/restaurant-370.jpg 1x,
-                                            ./images/restaurant-370@2x.jpg 2x" 
-                                            media="(min-width: 1200px)"/>
-                            <img src="./images/restaurant-450.jpg" 
-                            alt="логотип ресторану"/>
-                        </picture>
-                        <div class="reclam__box">
-                            <p class="reclam__text">
-                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                                вичерпні відомості про компанію чи приватну особу.
-                            </p>
-                        </div>
-                    </div>
-                <div class="reclam__tools">
-                <h2 class="reclam__title">
-                    Ресторан Seafood
-                </h2>
-                <p class="reclam__item">
-                    Додаток
-                </p>
-                </div>
-                </a>
-            </li>
-                        
-            <li>
-                <a href="" class="reclam__link">
-                    <div class="reclam__backdrop">
-                        <picture>
-                            <source srcset="
-                                            ./images/headphones-450.webp 1x,
-                                            ./images/headphones-450@2x.webp 2x"
-                                            type="image/webp"/>
-
-                            <source srcset="
-                                            ./images/headphones-450.jpg 1x,
-                                            ./images/headphones-450@2x.jpg 2x"/>
-                        
-                            <source srcset="
-                                            ./images/headphones-354.webp 1x,
-                                            ./images/headphones-354@2x.webp 2x" 
-                                            media="(min-width: 768px)"
-                                            type="image/webp"/>
-
-                            <source srcset="
-                                            ./images/headphones-354.jpg 1x,
-                                            ./images/headphones-354@2x.jpg 2x" 
-                                            media="(min-width: 768px)"/>
-                        
-                            <source srcset="
-                                            ./images/headphones-370.webp 1x,
-                                            ./images/headphones-370@2x.webp 2x" 
-                                            media="(min-width: 1200px)"
-                                            type="image/webp"/>
-
-                            <source srcset="
-                                            ./images/headphones-370.jpg 1x,
-                                            ./images/headphones-370@2x.jpg 2x" 
-                                            media="(min-width: 1200px)"/>
-                            <img src="./images/headphones-450.jpg" 
-                            alt="фото навушників"/>
-                        </picture>
-                        <div class="reclam__box">
-                            <p class="reclam__text">
-                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                                вичерпні відомості про компанію чи приватну особу.
-                            </p>
-                        </div>
-                    </div>
-                <div class="reclam__tools">
-                <h2 class="reclam__title">
-                    Проєкт Prime
-                </h2>
-                <p class="reclam__item">
-                    Маркетинг
-                </p>
-                </div>
-                </a>
-            </li>
-                        
-            <li>
-                <a href="" class="reclam__link">
-                <div class="reclam__backdrop">
-                    <picture>                             
-                        <source srcset="
-                                        ./images/boxes-450.webp 1x,
-                                        ./images/boxes-450@2x.webp 2x"
-                                        type="image/webp"/>
-
-                        <source srcset="
-                                        ./images/boxes-450.jpg 1x,
-                                        ./images/boxes-450@2x.jpg 2x"/>
-
-                        <source srcset="
-                                        ./images/boxes-354.webp 1x,
-                                        ./images/boxes-354@2x.webp 2x"
-                                        media="(min-width: 768px)"
-                                        type="image/webp"/>
-
-                        <source srcset="
-                                        ./images/boxes-354.jpg 1x,
-                                        ./images/boxes-354@2x.jpg 2x" 
-                                        media="(min-width: 768px)"/>
-
-                        <source srcset="
-                                        ./images/boxes-370.webp 1x,
-                                        ./images/boxes-370@2x.webp 2x"
-                                        media="(min-width: 1200px)"
-                                        type="image/webp"/>
-
-                        <source srcset="
-                                        ./images/boxes-370.jpg 1x,
-                                        ./images/boxes-370@2x.jpg 2x" 
-                                        media="(min-width: 1200px)"/>
-                        <img src="./images/boxes-450.jpg" 
-                        alt="зображення коробок"/>
+                      <source
+                        srcset="
+                          ./images/technokriack-370.jpg    1x,
+                          ./images/technokriack-370@2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <img
+                        src="./images/technokriack-450.jpg"
+                        alt="зображення хлопця і дівчат"
+                      />
                     </picture>
                     <div class="reclam__box">
-                    <p class="reclam__text">
-                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                        вичерпні відомості про компанію чи приватну особу.
-                    </p>
+                      <p class="reclam__text">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем
+                        функціоналу та сервісів. Все це дозволить відвідувачу
+                        отримати вичерпні відомості про компанію чи приватну
+                        особу.
+                      </p>
                     </div>
-                </div>
-                <div class="reclam__tools">
-                <h2 class="reclam__title">
-                    Проєкт Boxes
-                </h2>
-                <p class="reclam__item">
-                    Додаток
-                </p>
-                </div>
+                  </div>
+                  <div class="reclam__tools">
+                    <h2 class="reclam__title">Технокряк</h2>
+                    <p class="reclam__item">Веб-сайт</p>
+                  </div>
                 </a>
-            </li>
-                        
-            <li>
+              </li>
+
+              <li>
                 <a href="" class="reclam__link">
-                <div class="reclam__backdrop">
-                    <picture>     
-                        <source srcset="
-                                        ./images/monitor-450.webp 1x,
-                                        ./images/monitor-450@2x.webp 2x"
-                                        type="image/webp"/>
-                        
-                        <source srcset="
-                                        ./images/monitor-450.jpg 1x,
-                                        ./images/monitor-450@2x.jpg 2x"/>
+                  <div class="reclam__backdrop">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/basketball-450.webp    1x,
+                          ./images/basketball-450@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
 
-                        <source srcset="
-                                        ./images/monitor-354.webp 1x,
-                                        ./images/monitor-354@2x.webp 2x"
-                                        media="(min-width: 768px)"
-                                        type="image/webp"/>
+                      <source
+                        srcset="
+                          ./images/basketball-450.jpg    1x,
+                          ./images/basketball-450@2x.jpg 2x
+                        "
+                      />
 
-                        <source srcset="
-                                        ./images/monitor-354.jpg 1x,
-                                        ./images/monitor-354@2x.jpg 2x" 
-                                        media="(min-width: 768px)"/>
+                      <source
+                        srcset="
+                          ./images/basketball-354.webp    1x,
+                          ./images/basketball-354@2x.webp 2x
+                        "
+                        media="(min-width: 768px)"
+                        type="image/webp"
+                      />
 
-                        <source srcset="
-                                        ./images/monitor-370.webp 1x,
-                                        ./images/monitor-370@2x.webp 2x"
-                                        media="(min-width: 1200px)"
-                                        type="image/webp"/>
+                      <source
+                        srcset="
+                          ./images/basketball-354.jpg    1x,
+                          ./images/basketball-354@2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
 
-                        <source srcset="
-                                        ./images/monitor-370.jpg 1x,
-                                        ./images/monitor-370@2x.jpg 2x" 
-                                        media="(min-width: 1200px)"/>
-                        <img src="./images/monitor-450.jpg" 
-                        alt="зображення монітору"/>
+                      <source
+                        srcset="
+                          ./images/basketball-370.webp    1x,
+                          ./images/basketball-370@2x.webp 2x
+                        "
+                        media="(min-width: 1200px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/basketball-370.jpg    1x,
+                          ./images/basketball-370@2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <img
+                        src="./images/basketball-450.jpg"
+                        alt="гра у баскетбол"
+                      />
                     </picture>
                     <div class="reclam__box">
-                        <p class="reclam__text">
-                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                            вичерпні відомості про компанію чи приватну особу.
-                        </p>
+                      <p class="reclam__text">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем
+                        функціоналу та сервісів. Все це дозволить відвідувачу
+                        отримати вичерпні відомості про компанію чи приватну
+                        особу.
+                      </p>
                     </div>
-                </div>
-                <div class="reclam__tools">
-                <h2 lang="en" class="reclam__title">
-                    Inspiration has no Borders
-                </h2>
-                <p class="reclam__item">
-                    Веб-сайт
-                </p>
-                </div>
+                  </div>
+                  <div class="reclam__tools">
+                    <h2 class="reclam__title">
+                      Постер New Orlean vs Golden Star
+                    </h2>
+                    <p class="reclam__item">Дизайн</p>
+                  </div>
                 </a>
-            </li>
-                        
-            <li>
+              </li>
+
+              <li>
                 <a href="" class="reclam__link">
-                <div class="reclam__backdrop">
-                    <picture>        
-                        <source srcset="
-                                        ./images/book-450.webp 1x,
-                                        ./images/book-450@2x.webp 2x"
-                                        type="image/webp"/>
-                        
-                        <source srcset="
-                                        ./images/book-450.jpg 1x,
-                                        ./images/book-450@2x.jpg 2x"/>
+                  <div class="reclam__backdrop">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/restaurant-450.webp    1x,
+                          ./images/restaurant-450@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
 
-                        <source srcset="
-                                        ./images/book-354.webp 1x,
-                                        ./images/book-354@2x.webp 2x"
-                                        media="(min-width: 768px)"
-                                        type="image/webp"/>
+                      <source
+                        srcset="
+                          ./images/restaurant-450.jpg    1x,
+                          ./images/restaurant-450@2x.jpg 2x
+                        "
+                      />
 
-                        <source srcset="
-                                        ./images/book-354.jpg 1x,
-                                        ./images/book-354@2x.jpg 2x" 
-                                        media="(min-width: 768px)"/>
+                      <source
+                        srcset="
+                          ./images/restaurant-354.webp    1x,
+                          ./images/restaurant-354@2x.webp 2x
+                        "
+                        media="(min-width: 768px)"
+                        type="image/webp"
+                      />
 
+                      <source
+                        srcset="
+                          ./images/restaurant-354.jpg    1x,
+                          ./images/restaurant-354@2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
 
-                        <source srcset="
-                                        ./images/book-370.webp 1x,
-                                        ./images/book-370@2x.webp 2x"
-                                        media="(min-width: 1200px)"
-                                        type="image/webp"/>
+                      <source
+                        srcset="
+                          ./images/restaurant-370.webp    1x,
+                          ./images/restaurant-370@2x.webp 2x
+                        "
+                        media="(min-width: 1200px)"
+                        type="image/webp"
+                      />
 
-                        <source srcset="
-                                        ./images/book-370.jpg 1x,
-                                        ./images/book-370@2x.jpg 2x" 
-                                        media="(min-width: 1200px)"/>
-                        <img src="./images/book-450.jpg" 
-                        alt="зображення книги"/>
+                      <source
+                        srcset="
+                          ./images/restaurant-370.jpg    1x,
+                          ./images/restaurant-370@2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <img
+                        src="./images/restaurant-450.jpg"
+                        alt="логотип ресторану"
+                      />
                     </picture>
                     <div class="reclam__box">
-                        <p class="reclam__text">
-                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                            вичерпні відомості про компанію чи приватну особу.
-                        </p>
+                      <p class="reclam__text">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем
+                        функціоналу та сервісів. Все це дозволить відвідувачу
+                        отримати вичерпні відомості про компанію чи приватну
+                        особу.
+                      </p>
                     </div>
-                </div>
-                <div class="reclam__tools">
-                <h2 class="reclam__title">
-                    Видання Limited Edition
-                </h2>
-                <p class="reclam__item">
-                    Дизайн
-                </p>
-                </div>
+                  </div>
+                  <div class="reclam__tools">
+                    <h2 class="reclam__title">Ресторан Seafood</h2>
+                    <p class="reclam__item">Додаток</p>
+                  </div>
                 </a>
-            </li>
-                        
-            <li>
+              </li>
+
+              <li>
                 <a href="" class="reclam__link">
-                <div class="reclam__backdrop">
-                    <picture>            
-                        <source srcset="
-                                        ./images/trinket-450.webp 1x,
-                                        ./images/trinket-450@2x.webp 2x"
-                                        type="image/webp"/>
-                        
-                        <source srcset="
-                                        ./images/trinket-450.jpg 1x,
-                                        ./images/trinket-450@2x.jpg 2x"/>
+                  <div class="reclam__backdrop">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/headphones-450.webp    1x,
+                          ./images/headphones-450@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
 
-                        <source srcset="
-                                        ./images/trinket-354.webp 1x,
-                                        ./images/trinket-354@2x.webp 2x"
-                                        media="(min-width: 768px)"
-                                        type="image/webp"/>
+                      <source
+                        srcset="
+                          ./images/headphones-450.jpg    1x,
+                          ./images/headphones-450@2x.jpg 2x
+                        "
+                      />
 
-                        <source srcset="
-                                        ./images/trinket-354.jpg 1x,
-                                        ./images/trinket-354@2x.jpg 2x" 
-                                        media="(min-width: 768px)"/>
+                      <source
+                        srcset="
+                          ./images/headphones-354.webp    1x,
+                          ./images/headphones-354@2x.webp 2x
+                        "
+                        media="(min-width: 768px)"
+                        type="image/webp"
+                      />
 
-                        <source srcset="
-                                        ./images/trinket-370.webp 1x,
-                                        ./images/trinket-370@2x.webp 2x"
-                                        media="(min-width: 1200px)"
-                                        type="image/webp"/>
+                      <source
+                        srcset="
+                          ./images/headphones-354.jpg    1x,
+                          ./images/headphones-354@2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
 
-                        <source srcset="
-                                        ./images/trinket-370.jpg 1x,
-                                        ./images/trinket-370@2x.jpg 2x" 
-                                        media="(min-width: 1200px)"/>
-                        <img src="./images/trinket-450.jpg" 
-                        alt="на малюнку зображений брелок"/>
+                      <source
+                        srcset="
+                          ./images/headphones-370.webp    1x,
+                          ./images/headphones-370@2x.webp 2x
+                        "
+                        media="(min-width: 1200px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/headphones-370.jpg    1x,
+                          ./images/headphones-370@2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <img
+                        src="./images/headphones-450.jpg"
+                        alt="фото навушників"
+                      />
                     </picture>
                     <div class="reclam__box">
-                        <p class="reclam__text">
-                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                            вичерпні відомості про компанію чи приватну особу.
-                        </p>
+                      <p class="reclam__text">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем
+                        функціоналу та сервісів. Все це дозволить відвідувачу
+                        отримати вичерпні відомості про компанію чи приватну
+                        особу.
+                      </p>
                     </div>
-                </div>
-                <div class="reclam__tools">
-                <h2 class="reclam__title">
-                    Проєкт LAB
-                </h2>
-                <p class="reclam__item">
-                    Маркетинг
-                </p>
-                </div>
+                  </div>
+                  <div class="reclam__tools">
+                    <h2 class="reclam__title">Проєкт Prime</h2>
+                    <p class="reclam__item">Маркетинг</p>
+                  </div>
                 </a>
-            </li>
-            
-            <li>
+              </li>
+
+              <li>
                 <a href="" class="reclam__link">
-                <div class="reclam__backdrop">
-                    <picture>  
-                        <source srcset="
-                                        ./images/notbook-450.webp 1x,
-                                        ./images/notbook-450@2x.webp 2x"
-                                        type="image/webp"/>
-                        
-                        <source srcset="
-                                        ./images/notbook-450.jpg 1x,
-                                        ./images/notbook-450@2x.jpg 2x"/>
+                  <div class="reclam__backdrop">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/boxes-450.webp    1x,
+                          ./images/boxes-450@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
 
-                        <source srcset="
-                                        ./images/notbook-354.webp 1x,
-                                        ./images/notbook-354@2x.webp 2x"
-                                        media="(min-width: 768px)"
-                                        type="image/webp"/>
+                      <source
+                        srcset="
+                          ./images/boxes-450.jpg    1x,
+                          ./images/boxes-450@2x.jpg 2x
+                        "
+                      />
 
-                        <source srcset="
-                                        ./images/notbook-354.jpg 1x,
-                                        ./images/notbook-354@2x.jpg 2x" 
-                                        media="(min-width: 768px)"/>
+                      <source
+                        srcset="
+                          ./images/boxes-354.webp    1x,
+                          ./images/boxes-354@2x.webp 2x
+                        "
+                        media="(min-width: 768px)"
+                        type="image/webp"
+                      />
 
-                        <source srcset="
-                                        ./images/notbook-370.webp 1x,
-                                        ./images/notbook-370@2x.webp 2x"
-                                        media="(min-width: 1200px)"
-                                        type="image/webp"/>
+                      <source
+                        srcset="
+                          ./images/boxes-354.jpg    1x,
+                          ./images/boxes-354@2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
 
-                        <source srcset="
-                                        ./images/notbook-370.jpg 1x,
-                                        ./images/notbook-370@2x.jpg 2x" 
-                                        media="(min-width: 1200px)"/>
-                        <img src="./images/notbook-450.jpg" 
-                        alt="зображення хлопця і двох дівчат"/>
+                      <source
+                        srcset="
+                          ./images/boxes-370.webp    1x,
+                          ./images/boxes-370@2x.webp 2x
+                        "
+                        media="(min-width: 1200px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/boxes-370.jpg    1x,
+                          ./images/boxes-370@2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <img
+                        src="./images/boxes-450.jpg"
+                        alt="зображення коробок"
+                      />
                     </picture>
                     <div class="reclam__box">
-                        <p class="reclam__text">
-                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                            вичерпні відомості про компанію чи приватну особу.
-                        </p>
+                      <p class="reclam__text">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем
+                        функціоналу та сервісів. Все це дозволить відвідувачу
+                        отримати вичерпні відомості про компанію чи приватну
+                        особу.
+                      </p>
                     </div>
-                </div>
-                <div class="reclam__tools">
-                <h2 lang="en" class="reclam__title">
-                    Growing Business
-                </h2>
-                <p class="reclam__item">
-                    Додаток
-                </p>
-                </div>
+                  </div>
+                  <div class="reclam__tools">
+                    <h2 class="reclam__title">Проєкт Boxes</h2>
+                    <p class="reclam__item">Додаток</p>
+                  </div>
                 </a>
-            </li>
-            
-        </ul>
+              </li>
+
+              <li>
+                <a href="" class="reclam__link">
+                  <div class="reclam__backdrop">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/monitor-450.webp    1x,
+                          ./images/monitor-450@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/monitor-450.jpg    1x,
+                          ./images/monitor-450@2x.jpg 2x
+                        "
+                      />
+
+                      <source
+                        srcset="
+                          ./images/monitor-354.webp    1x,
+                          ./images/monitor-354@2x.webp 2x
+                        "
+                        media="(min-width: 768px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/monitor-354.jpg    1x,
+                          ./images/monitor-354@2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/monitor-370.webp    1x,
+                          ./images/monitor-370@2x.webp 2x
+                        "
+                        media="(min-width: 1200px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/monitor-370.jpg    1x,
+                          ./images/monitor-370@2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <img
+                        src="./images/monitor-450.jpg"
+                        alt="зображення монітору"
+                      />
+                    </picture>
+                    <div class="reclam__box">
+                      <p class="reclam__text">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем
+                        функціоналу та сервісів. Все це дозволить відвідувачу
+                        отримати вичерпні відомості про компанію чи приватну
+                        особу.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="reclam__tools">
+                    <h2 lang="en" class="reclam__title">
+                      Inspiration has no Borders
+                    </h2>
+                    <p class="reclam__item">Веб-сайт</p>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="" class="reclam__link">
+                  <div class="reclam__backdrop">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/book-450.webp    1x,
+                          ./images/book-450@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/book-450.jpg    1x,
+                          ./images/book-450@2x.jpg 2x
+                        "
+                      />
+
+                      <source
+                        srcset="
+                          ./images/book-354.webp    1x,
+                          ./images/book-354@2x.webp 2x
+                        "
+                        media="(min-width: 768px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/book-354.jpg    1x,
+                          ./images/book-354@2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/book-370.webp    1x,
+                          ./images/book-370@2x.webp 2x
+                        "
+                        media="(min-width: 1200px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/book-370.jpg    1x,
+                          ./images/book-370@2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <img src="./images/book-450.jpg" alt="зображення книги" />
+                    </picture>
+                    <div class="reclam__box">
+                      <p class="reclam__text">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем
+                        функціоналу та сервісів. Все це дозволить відвідувачу
+                        отримати вичерпні відомості про компанію чи приватну
+                        особу.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="reclam__tools">
+                    <h2 class="reclam__title">Видання Limited Edition</h2>
+                    <p class="reclam__item">Дизайн</p>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="" class="reclam__link">
+                  <div class="reclam__backdrop">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/trinket-450.webp    1x,
+                          ./images/trinket-450@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/trinket-450.jpg    1x,
+                          ./images/trinket-450@2x.jpg 2x
+                        "
+                      />
+
+                      <source
+                        srcset="
+                          ./images/trinket-354.webp    1x,
+                          ./images/trinket-354@2x.webp 2x
+                        "
+                        media="(min-width: 768px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/trinket-354.jpg    1x,
+                          ./images/trinket-354@2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/trinket-370.webp    1x,
+                          ./images/trinket-370@2x.webp 2x
+                        "
+                        media="(min-width: 1200px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/trinket-370.jpg    1x,
+                          ./images/trinket-370@2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <img
+                        src="./images/trinket-450.jpg"
+                        alt="на малюнку зображений брелок"
+                      />
+                    </picture>
+                    <div class="reclam__box">
+                      <p class="reclam__text">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем
+                        функціоналу та сервісів. Все це дозволить відвідувачу
+                        отримати вичерпні відомості про компанію чи приватну
+                        особу.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="reclam__tools">
+                    <h2 class="reclam__title">Проєкт LAB</h2>
+                    <p class="reclam__item">Маркетинг</p>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="" class="reclam__link">
+                  <div class="reclam__backdrop">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/notbook-450.webp    1x,
+                          ./images/notbook-450@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/notbook-450.jpg    1x,
+                          ./images/notbook-450@2x.jpg 2x
+                        "
+                      />
+
+                      <source
+                        srcset="
+                          ./images/notbook-354.webp    1x,
+                          ./images/notbook-354@2x.webp 2x
+                        "
+                        media="(min-width: 768px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/notbook-354.jpg    1x,
+                          ./images/notbook-354@2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/notbook-370.webp    1x,
+                          ./images/notbook-370@2x.webp 2x
+                        "
+                        media="(min-width: 1200px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/notbook-370.jpg    1x,
+                          ./images/notbook-370@2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <img
+                        src="./images/notbook-450.jpg"
+                        alt="зображення хлопця і двох дівчат"
+                      />
+                    </picture>
+                    <div class="reclam__box">
+                      <p class="reclam__text">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем
+                        функціоналу та сервісів. Все це дозволить відвідувачу
+                        отримати вичерпні відомості про компанію чи приватну
+                        особу.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="reclam__tools">
+                    <h2 lang="en" class="reclam__title">Growing Business</h2>
+                    <p class="reclam__item">Додаток</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        </div>
-
-        </section>
-
+      </section>
     </main>
 
-    <footer class="footer">
-
-        <div class="container footer__box">
-            <div>
-                <a lang="en" class="logo footer__logo" href="./index.html">Web<span class="logo-white">Studio</span></a>
-                <address class="address">
-                    <ul class="address__list">
-                        <li>
-                            <a class="address__text" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
-                                rel="noopener noreferrer nofollow">
-                                м. Київ, пр-т Лесі
-                                Українки, 26</a>
-                        </li>
-                        <li>
-                            <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                        </li>
-                        <li>
-                            <a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a>
-                        </li>
-                    </ul>
-                </address>
-            </div>
-        
-            <div class="footer-join">
-                <b class="footer-join__title">
-                    приєднуйтесь
-                </b>
-                <ul class="footer-join__inner">
-                    <li>
-                        <a href="" class="footer-join__link">
-                            <svg width="20" height="20">
-                                <use href="./images/icons.svg#icon-instagram">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-            
-                    <li>
-                        <a href="" class="footer-join__link">
-                            <svg width="20" height="20">
-                                <use href="./images/icons.svg#icon-twitter">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-            
-                    <li>
-                        <a href="" class="footer-join__link">
-                            <svg width="20" height="20">
-                                <use href="./images/icons.svg#icon-facebook">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-            
-                    <li>
-                        <a href="" class="footer-join__link">
-                            <svg width="20" height="20">
-                                <use href="./images/icons.svg#icon-linkedin">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="footer-subscription">
-                <b class="footer-subscription__text">Підпишіться на розсилку</b>
-                <form class="footer-subscription__form">
-                    <input type="email" name="mail" placeholder="E-mail" />
-                    <button class="footer-subscription__button" type="submit">Підписатися
-                        <svg class="footer-subscription__icon" width="24" height="24">
-                            <use href="./images/icons.svg#icon-envelope">
-                            </use>
-                        </svg>
-                    </button>
-                </form>
-            </div>
+    <footer data-aos="fade-up" data-aos-duration="1500" class="footer">
+      <div class="container footer__box">
+        <div>
+          <a lang="en" class="logo footer__logo" href="./index.html"
+            >Web<span class="logo-white">Studio</span></a
+          >
+          <address class="address">
+            <ul class="address__list">
+              <li>
+                <a
+                  class="address__text"
+                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li>
+                <a class="address__link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="address__link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
         </div>
 
+        <div class="footer-join">
+          <b class="footer-join__title"> приєднуйтесь </b>
+          <ul class="footer-join__inner">
+            <li>
+              <a href="" class="footer-join__link">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="" class="footer-join__link">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="" class="footer-join__link">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="" class="footer-join__link">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-subscription">
+          <b class="footer-subscription__text">Підпишіться на розсилку</b>
+          <form class="footer-subscription__form">
+            <input type="email" name="mail" placeholder="E-mail" />
+            <button class="footer-subscription__button" type="submit">
+              Підписатися
+              <svg class="footer-subscription__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
     </footer>
 
     <!-- mobile menu -->
     <div class="mobile-menu js-menu-container">
-        <div class="container">
-            <button class="mobile-menu__close-button js-close-menu" type="button">
-                <svg width="18.67" height="18.67">
-                    <use href="./images/icons.svg#icon-close-modal">
-                    </use>
-                </svg>
-            </button>
-            <div class="mobile-nav">
-                <ul class="mobile-nav__list">
-                    <li class="mobile-nav__item">
-                        <a class="mobile-nav__link" href="./index.html">Студія</a>
-                    </li>
-                    <li class="mobile-nav__item">
-                        <a class="mobile-nav__link mobile-nav__link--current" href="./portfolio.html">Портфоліо</a>
-                    </li>
-                    <li class="mobile-nav__item">
-                        <a class="mobile-nav__link" href="#">Контакти</a>
-                    </li>
-                </ul>
-    
-                <ul class="mobile-contact">
-                    <li class="mobile-contact__list">
-                        <a class="mobile-contact__phone" href="tel:+380961111111">+38 096 111 11 11
-                        </a>
-                    </li>
-                    <li class="mobile-contact__list">
-                        <a lang="en" class="mobile-contact__link" href="mailto:info@devstudio.com">info@devstudio.com
-                        </a>
-                    </li>
-                </ul>
-    
-                <ul class="mobile-social">
-                    <li class="mobile-social__list">
-                        <a class="mobile-social__link" href="#">Instagram</a>
-                    </li>
-                    <li class="mobile-social__list">
-                        <a class="mobile-social__link" href="#">Twitter</a>
-                    </li>
-                    <li class="mobile-social__list">
-                        <a class="mobile-social__link" href="#">Facebook</a>
-                    </li>
-                    <li class="mobile-social__list">
-                        <a class="mobile-social__link" href="#">LinkedIn</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <button class="mobile-menu__close-button js-close-menu" type="button">
+          <svg width="18.67" height="18.67">
+            <use href="./images/icons.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+        <div class="mobile-nav">
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="./index.html">Студія</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a
+                class="mobile-nav__link mobile-nav__link--current"
+                href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="#">Контакти</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-contact">
+            <li class="mobile-contact__list">
+              <a class="mobile-contact__phone" href="tel:+380961111111"
+                >+38 096 111 11 11
+              </a>
+            </li>
+            <li class="mobile-contact__list">
+              <a
+                lang="en"
+                class="mobile-contact__link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com
+              </a>
+            </li>
+          </ul>
+
+          <ul class="mobile-social">
+            <li class="mobile-social__list">
+              <a class="mobile-social__link" href="#">Instagram</a>
+            </li>
+            <li class="mobile-social__list">
+              <a class="mobile-social__link" href="#">Twitter</a>
+            </li>
+            <li class="mobile-social__list">
+              <a class="mobile-social__link" href="#">Facebook</a>
+            </li>
+            <li class="mobile-social__list">
+              <a class="mobile-social__link" href="#">LinkedIn</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
 
-<script src="./js/mobile-menu.js"></script>
-</body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
 </html>
